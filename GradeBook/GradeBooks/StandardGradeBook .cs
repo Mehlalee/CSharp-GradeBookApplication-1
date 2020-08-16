@@ -14,9 +14,9 @@ namespace GradeBook.GradeBooks
 
     public string Name { get; set; }
 
-    public StandardGradeBook( string name)
+    public StandardGradeBook(string name) : base(name)
     {
-
+      Type = GradeBookType.Standard;
     }
   }
 }
